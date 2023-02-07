@@ -1,10 +1,13 @@
 ﻿#!/bin/bash
 
-red='\033[0;31m'
-green='\033[0;32m'
-orange='\033[0;35m'
-
-echo -e "[ $green 1-PUSH & $orange 2-PULL ] ?: " ;read cash
+a='\033[1;31m'
+b='\033[1;32m'
+c='\033[1;33m'
+d='\033[1;34m'
+e='\033[1;35m'
+python .ssss.py
+echo -e "$d"
+read -p "[ AHT @ HAKER ]~# " cash
 if [ $cash = 1 ]; then
 
 	cd /data/data/com.termux/files/home/api
