@@ -5,9 +5,9 @@ def kk(t):
         sys.stdout.flush()
         time.sleep(9. / 2040)
 
-a = "  \033[1;35m==A=L=T=O=R=K=Y==>>.[ 1 ]\033[1;32m Install Metasploit"
+a = "  \033[1;35m==A=H=M=E=D==>>.[ 1 ]\033[1;32m PUSH"
 b = "  "
-c = "  \033[1;35m==A=L=T=O=R=K=Y==>>...[ 2 ]\033[1;32m Metasploit New "
+c = "  \033[1;35m==A=H=M=E=D==>>...[ 2 ]\033[1;32m PULL"
 
 kk(a)
 kk(b)
