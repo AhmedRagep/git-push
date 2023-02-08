@@ -26,6 +26,7 @@ if [ $cash = 1 ]; then
 	echo -e '\033[1;34m------------------'
 
 	echo -e '\033[1;32m SACCESSFULY'
+	echo ""
 elif [ $cash = 2 ]; then
 	cd /data/data/com.termux/files/home/api
 	git pull
