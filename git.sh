@@ -17,16 +17,16 @@ if [ $man = 1 ]; then
 	if [ $cash = 1 ]; then
 		file = /data/data/com.termux/files/home/
 		cd $file$pro
-		read -p "ADD ?:"
+		read -p "[ AHT @ ADD ]~? "
 		git add .
 		echo -e '\033[1;32m------------------'
-		read -p "COMMIT ?: " msg
+		read -p "[ AHT @ COMMIT ]~? " msg
 		git commit -m "$msg"
 		echo -e '\033[1;32m------------------'
-		read -p "BRANCH ?:"
+		read -p "[ AHT @ BRANCH ]~? "
 		git branch -M main
 		echo -e '\033[1;34m------------------'
-		read -p "PUSH ?: "
+		read -p "[ AHT @ PUSH ]~? "
 		git push
 		echo -e '\033[1;34m------------------'
 		echo -e "\033[1;32m --------------------"
@@ -55,16 +55,16 @@ elif [ $man = 2 ]; then
 	if [[ $cash2 = 1 ]]; then
 		file2=/c/Users/Ahmed/Desktop/
 		cd $file2$pro
-		read -p "ADD ?:"
+		read -p "[ AHT @ ADD ]~? "
 		git add .
 		echo -e '\033[1;32m------------------'
-		read -p "COMMIT ?: " msg
+		read -p "[ AHT @ COMMIT ]~? " msg
 		git commit -m "$msg"
 		echo -e '\033[1;32m------------------'
-		read -p "BRANCH ?:"
+		read -p "[ AHT @ BRANCH ]~? "
 		git branch -M main
 		echo -e '\033[1;34m------------------'
-		read -p "PUSH ?: "
+		read -p "[ AHT @ PUSH ]~? "
 		git push
 		echo -e '\033[1;34m------------------'
 		echo -e "\033[1;32m --------------------"
