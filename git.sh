@@ -15,7 +15,7 @@ if [ $man = 1 ]; then
 	read -p "[ AHT @ HAKER ]~# " cash
 	echo -e "$d"
 	if [ $cash = 1 ]; then
-		file = /data/data/com.termux/files/home/
+		file=/data/data/com.termux/files/home/
 		cd $file$pro
 		read -p "[ AHT @ ADD ]~? "
 		git add .
@@ -33,15 +33,30 @@ if [ $man = 1 ]; then
 		echo -e "\033[1;32m    SACCESSFULY"
 		echo -e "\033[1;32m --------------------"
 	elif [ $cash = 2 ]; then
+		file=/data/data/com.termux/files/home/
 		cd $file$pro
 		git pull
 		echo -e "\033[1;32m --------------------"
 		echo -e "\033[1;32m    SACCESSFULY"
 		echo -e "\033[1;32m --------------------"
 	elif [ $cash = 3 ]; then
+		file=/data/data/com.termux/files/home/$pro/
 		echo -e "$c"
 		read -p "What Is The Path File ?: " file
 		git add -f $file
+		echo -e '\033[1;32m------------------'
+                read -p "[ AHT @ COMMIT ]~? " msg
+                git commit -m "$msg"
+                echo -e '\033[1;32m------------------'
+                read -p "[ AHT @ BRANCH ]~? "
+                git branch -M main
+                echo -e '\033[1;34m------------------'
+                read -p "[ AHT @ PUSH ]~? "
+                git push
+                echo -e '\033[1;34m------------------'
+                echo -e "\033[1;32m --------------------"
+                echo -e "\033[1;32m    SACCESSFULY"
+                echo -e "\033[1;32m --------------------"
 	else
 		echo -e '\033[1;31m--------------------'
 		echo -e '\033[1;31m-      ERROR'
